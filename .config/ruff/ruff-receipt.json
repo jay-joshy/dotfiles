@@ -1,0 +1,1 @@
+{"binaries":["ruff"],"binary_aliases":{},"cdylibs":[],"cstaticlibs":[],"install_prefix":"/Users/joshuayu/.cargo","provider":{"source":"cargo-dist","version":"0.22.1"},"source":{"app_name":"ruff","name":"ruff","owner":"astral-sh","release_type":"github"},"version":"0.6.8"}

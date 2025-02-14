@@ -1,0 +1,37 @@
+format = """
+$username\
+$directory\  
+$git_branch\
+$git_status\
+$fill\
+$python\
+$lua\
+$rust\
+$time\
+$line_break\
+$character
+"""
+
+add_newline = false
+
+[username]
+show_always = true
+format = 'jay: '
+
+[directory]
+format = "[$path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[time]
+disabled = false
+time_format = "%R"
+style = "teal"
+format = '[$time]($style)'
+
+[fill]
+symbol = " "
+
+[python]
+style = 'teal'
+format = '[${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'

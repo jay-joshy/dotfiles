@@ -1,0 +1,64 @@
+theme = "josh_theme"
+
+[editor]
+line-number = "relative"
+bufferline = "multiple"
+scroll-lines = 5
+soft-wrap.enable = true
+auto-completion = true
+gutters = ["diagnostics", "line-numbers", "spacer", "diff"]
+idle-timeout = 0
+completion-timeout = 5
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = [
+  "diagnostics",
+  "version-control",
+  "selections",
+  # "position",
+  "file-encoding",
+  "file-type",
+]
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "error"
+
+[keys.insert]
+j = { k = "normal_mode" }
+
+[keys.normal]
+"C-l" = ":open ~/.config/helix/languages.toml"
+"C-k" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+"C-j" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_down",
+  "paste_before",
+]
+
+X = ["extend_line_up", "extend_to_line_bounds"]
+A-x = "extend_to_line_bounds"
+
+[keys.select]
+X = ["extend_line_up", "extend_to_line_bounds"]
+A-x = "extend_to_line_bounds"
