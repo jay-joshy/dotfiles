@@ -64,7 +64,7 @@ avoid_curses = false
 
 [language-server.harper-ls.config.harper-ls]
 diagnosticSeverity = "warning"
-userDictPath = "/Users/joshuayu/.config/harper/dict.txt"
+userDictPath = "~/.config/harper/dict.txt"
 fileDictPath = "~/.harper/"
 
 [language-server.superhtml-lsp]
